@@ -31,14 +31,14 @@ A modern, responsive, and SEO-optimized resume website built with HTML5 and CSS3
 
 To personalize this resume for yourself, edit the following in `index.html`:
 
-1. **Personal Information** (lines 15-25): Update name, title, description, and URLs
-2. **Contact Details** (lines 67-82): Update email, phone, LinkedIn, and GitHub links
-3. **About Me** (lines 89-95): Write your own summary
-4. **Skills** (lines 103-139): List your technical skills
-5. **Work Experience** (lines 148-212): Add your work history
-6. **Education** (lines 221-238): Add your educational background
-7. **Projects** (lines 247-272): Showcase your projects
-8. **Certifications** (lines 281-297): List your certifications
+1. **Personal Information**: Update SEO meta tags with your name, title, and description
+2. **Contact Details**: Update email, phone, LinkedIn, and GitHub links in the header section
+3. **About Me**: Write your own professional summary
+4. **Skills**: List your technical skills organized by category
+5. **Work Experience**: Add your work history with company names and achievements
+6. **Education**: Add your educational background
+7. **Projects**: Showcase your personal or professional projects
+8. **Certifications**: List your professional certifications
 
 ## Technologies Used
 
