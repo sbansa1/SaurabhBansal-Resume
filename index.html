@@ -149,8 +149,8 @@
 
         /* Experience Section */
         .experience-item {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -164,7 +164,7 @@
             display: flex;
             align-items: flex-start;
             gap: 1rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
         }
 
         .company-logo {
@@ -226,13 +226,15 @@
         .subsection-title {
             font-size: 1rem;
             font-weight: 600;
-            color: var(--text-dark);
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .subsection-title:first-of-type {
-            margin-top: 0;
+            margin-top: 0.5rem;
         }
 
         ul {
@@ -243,9 +245,9 @@
         li {
             position: relative;
             padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
             color: var(--text-light);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         li:before {
@@ -254,6 +256,23 @@
             left: 0;
             color: var(--secondary-color);
             font-weight: bold;
+        }
+        
+        /* Nested lists for better hierarchy */
+        li ul {
+            margin-top: 0.5rem;
+            margin-left: 0;
+        }
+        
+        li ul li {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+        
+        /* Highlight project names in experience bullets */
+        li strong {
+            color: var(--text-dark);
+            font-weight: 600;
         }
 
         /* Skills Section */
@@ -484,81 +503,23 @@
                         </div>
                     </div>
 
-                    <h4 class="subsection-title">Platform, Product & SaaS Delivery Leadership</h4>
+                    <h4 class="subsection-title">Key Initiatives & Platform Delivery</h4>
                     <ul>
+                        <li><strong>PrescribeIT (National e-Prescribing Platform):</strong> Led technical delivery of Canada's national e-prescribing platform built on FHIR R4. Coordinated multi-vendor conformance testing, implementation guide updates, and workflow validation across EMRs, pharmacies, and national services. Reduced integration ambiguity by ~30–50% through structured validation and documentation.</li>
+                        <li><strong>Medcan MyMedcan (Digital Platform Modernization):</strong> Delivered end-to-end modernization integrating .NET backend, React frontend, Azure AD B2C, Salesforce APIs, and payment systems. Led stakeholder workshops, UX collaboration in Figma, and solution architecture. Platform launch recognized as one of the smoothest delivered with measurable business impact.</li>
+                        <li><strong>Amplify Care (Conformance Testing Platform):</strong> Built scalable multi-vendor conformance suite enabling healthcare organizations to validate compliance against provincial and national interoperability standards. Translated regulatory requirements into testable scenarios and improved compliance visibility.</li>
                         <li>Led end-to-end delivery of enterprise SaaS platforms, digital products, and interoperability initiatives across regulated healthcare environments, operating at the intersection of product, engineering, UX, integration, and stakeholder governance.</li>
                         <li>Drove delivery across multiple concurrent workstreams spanning platform modernization, API integrations, and vendor ecosystems, improving release predictability by ~25–30% through disciplined planning and dependency management.</li>
-                        <li>Maintained delivery SLAs across internal and external teams, supporting 99.9%+ uptime targets during critical release cycles and go-live events.</li>
+                    </ul>
+
+                    <h4 class="subsection-title">Delivery Leadership & Execution</h4>
+                    <ul>
                         <li>Acted as the primary delivery lead for complex initiatives, aligning executive stakeholders, clinical partners, product owners, engineers, and vendors on scope, priorities, and outcomes.</li>
-                        <li>Established delivery governance structures (roadmaps, RAID logs, escalation paths, and reporting cadences) that reduced delivery blockers by ~30% and improved decision-making speed.</li>
-                    </ul>
-
-                    <h4 class="subsection-title">Enterprise Integrations & Interoperability (Medcan, PrescribeIT, Amplify Care)</h4>
-                    <ul>
-                        <li>Led delivery of complex, multi-system integration programs involving enterprise platforms, identity services, payment systems, and national interoperability standards.</li>
-                        <li>Directed API and interoperability initiatives across distributed systems, including FHIR-based platforms, enterprise REST APIs, authentication/identity workflows, and third-party vendor integrations.</li>
-                        <li>Led integration readiness planning and release sequencing across systems, reducing integration-related defects and late-stage rework by ~30%.</li>
-                        <li>Coordinated multi-vendor conformance and validation workflows, improving test pass rates and accelerating onboarding of external partners.</li>
-                        <li>Translated regulatory, clinical, and business requirements into executable technical workflows, balancing compliance, feasibility, user experience, and delivery timelines.</li>
-                        <li>Served as the escalation point for complex cross-system issues, facilitating resolution through structured triage, root-cause analysis, and coordinated remediation plans.</li>
-                    </ul>
-
-                    <h4 class="subsection-title">PrescribeIT – National e-Prescribing Platform (FHIR R4)</h4>
-                    <ul>
-                        <li>Technical Project Manager & Integration Lead for Canada's national e-prescribing platform.</li>
-                        <li>Led delivery of PrescribeIT MVP phases, built on FHIR R4, enabling secure prescription workflows across EMRs, pharmacies, and national services.</li>
-                        <li>Oversaw implementation of updated Implementation Guides (IG Packs), including Rev 5.2 updates, incorporating new business rules, workflows, and validation logic.</li>
-                        <li>Performed delta analysis across workflows, APIs, and conformance rules to identify gaps between evolving regulatory standards and existing implementations.</li>
-                        <li>Coordinated multi-vendor testing using a reference implementation and conformance tooling to validate message structure, business rules, and workflow sequencing before production submission.</li>
-                        <li>Reduced integration ambiguity and accelerated issue triage by ~30–50% through structured validation workflows, improved documentation, and tighter vendor coordination.</li>
-                        <li>Acted as a bridge between clinicians, regulators, product teams, and engineers, ensuring clinical intent and regulatory requirements were accurately reflected in technical implementation.</li>
-                        <li>Recognized by stakeholders as instrumental in delivering MVP phases in aggressive timelines, while maintaining platform stability and compliance.</li>
-                    </ul>
-
-                    <h4 class="subsection-title">Medcan – MyMedcan Digital Platform Modernization</h4>
-                    <ul>
-                        <li>Delivery Lead for the modernization of Medcan's flagship digital patient platform.</li>
-                        <li>Led end-to-end delivery of MyMedcan, integrating:
-                            <ul>
-                                <li>.NET backend services</li>
-                                <li>React-based web applications</li>
-                                <li>Azure AD B2C for identity and authentication</li>
-                                <li>Salesforce workflows exposed via Apex-based APIs</li>
-                                <li>Moneris payment integration</li>
-                            </ul>
-                        </li>
-                        <li>Facilitated extensive stakeholder workshops with business leaders, clinicians, operations, and engineering teams to gather requirements and align on future-state workflows.</li>
-                        <li>Partnered closely with UI/UX designers, contributing to:
-                            <ul>
-                                <li>Low-fidelity workflow concepts and whiteboard ideation</li>
-                                <li>High-fidelity designs in Figma</li>
-                                <li>Iterative UX refinements based on user pain points and feedback</li>
-                            </ul>
-                        </li>
-                        <li>Translated business and clinical requirements into actionable epics, user stories, and acceptance criteria, ensuring shared understanding across teams.</li>
-                        <li>Designed solution architecture, workflow diagrams, integration flows, and API validation frameworks using Lucidchart and Visio.</li>
-                        <li>Created hands-on proofs of concept and Postman-based API test suites to unblock engineering teams and validate integration assumptions.</li>
-                        <li>Led sprint planning, demos, retrospectives, release coordination, and stakeholder communications throughout delivery.</li>
-                        <li>Recognized by clients for delivery quality and execution discipline, including platform launches cited as among the smoothest delivered to date with measurable business impact.</li>
-                    </ul>
-
-                    <h4 class="subsection-title">Amplify Care – Conformance Testing Platform</h4>
-                    <ul>
-                        <li>Delivery Lead for a scalable conformance and compliance validation platform.</li>
-                        <li>Led delivery of a multi-vendor conformance testing suite enabling healthcare organizations and vendors to validate compliance against evolving provincial and national interoperability standards.</li>
-                        <li>Translated complex regulatory requirements into clear, testable conformance rules and validation scenarios, supporting both automated and manual testing.</li>
-                        <li>Partnered with stakeholders to design workflows that supported vendor self-testing, review, and certification readiness.</li>
-                        <li>Directed iterative UI/UX refinements to improve usability and clarity of test results and reporting outputs.</li>
-                        <li>Built comprehensive documentation including solution architecture, workflow diagrams, and operational guidance, improving adoption and long-term maintainability.</li>
-                        <li>Helped establish a framework that scaled across vendors and standards, reducing uncertainty and improving compliance visibility.</li>
-                    </ul>
-
-                    <h4 class="subsection-title">Delivery Governance, Execution & Leadership</h4>
-                    <ul>
                         <li>Owned scope, timelines, and financial oversight across large-scale delivery initiatives, containing scope change to &lt;10% variance and minimizing rework.</li>
-                        <li>Built and maintained enterprise delivery artifacts including sprint roadmaps, dependency maps, RAID logs, capacity plans, and release calendars.</li>
+                        <li>Established delivery governance structures (roadmaps, RAID logs, escalation paths, and reporting cadences) that reduced delivery blockers by ~30% and improved decision-making speed.</li>
                         <li>Led Agile delivery cadences across distributed teams of 5–9 resources, maintaining predictable execution across 2–3 week sprint cycles.</li>
-                        <li>Developed dashboards, burndown/burnup metrics, and reporting views to improve leadership visibility and delivery transparency.</li>
+                        <li>Maintained delivery SLAs across internal and external teams, supporting 99.9%+ uptime targets during critical release cycles and go-live events.</li>
+                        <li>Directed API and interoperability initiatives across distributed systems, including FHIR-based platforms, enterprise REST APIs, authentication/identity workflows, and third-party vendor integrations.</li>
                         <li>Acted as a hands-on delivery leader—reviewing technical specifications, identifying risks, challenging assumptions, and proposing alternative solution approaches when needed.</li>
                     </ul>
                 </div>

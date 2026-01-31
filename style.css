@@ -192,8 +192,8 @@ body {
 
 /* Experience Section */
 .experience-item {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -207,7 +207,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -268,7 +268,7 @@ body {
     padding-left: 1.5rem;
     margin-bottom: 0.75rem;
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .experience-details li:before {
@@ -278,6 +278,27 @@ body {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+/* Subsection titles within experience items */
+.subsection-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.subsection-title:first-of-type {
+    margin-top: 0.5rem;
+}
+
+/* Highlight project names in experience bullets */
+.experience-details li strong {
+    color: var(--text-dark);
+    font-weight: 600;
 }
 
 /* Education Section */
